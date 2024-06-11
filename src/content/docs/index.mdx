@@ -1,36 +1,39 @@
 ---
-title: Welcome to Starlight
+title: Welcome to Scriptura
 description: Get started building your docs site with Starlight.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: A comprehensive API for biblical resources
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/scriptura.png
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Getting started
+      link: /start-here/getting-started/
       icon: right-arrow
       variant: primary
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+    - text: Swagger
+      link: https://TODO
+      icon: seti:json
+    - text: GraphiQL
+      link: https://TODO
+      icon: seti:graphql
 ---
 
 import { Card, CardGrid } from "@astrojs/starlight/components";
 
-## Next steps
-
 <CardGrid>
-  <Card title="Update content" icon="pencil">
-    Edit `src/content/docs/index.mdx` to see this page change.
+  <Card title="Explore Bible resources" icon="magnifier">
+    A wide range of biblical resources, including texts, translations,
+    commentaries, and more.
   </Card>
-  <Card title="Add new content" icon="add-document">
-    Add Markdown or MDX files to `src/content/docs` to create new pages.
+  <Card title="Detailed information" icon="seti:csv">
+    Explore detailed information about characters, places, and events in the
+    Bible.
   </Card>
-  <Card title="Configure your site" icon="setting">
-    Edit your `sidebar` and other config in `astro.config.mjs`.
+  <Card title="700+ Bible versions" icon="open-book">
+    Access over 700 Bible versions in 400+ languages.
   </Card>
-  <Card title="Read the docs" icon="open-book">
-    Learn more in [the Starlight Docs](https://starlight.astro.build/).
+  <Card title="REST and GraphQL" icon="seti:json">
+    Choose between REST and GraphQL to access the API.
   </Card>
 </CardGrid>

@@ -5,14 +5,20 @@ import starlight from "@astrojs/starlight";
 export default defineConfig({
   integrations: [
     starlight({
-      title: "Scriptura",
+      title: "",
+      logo: {
+        src: "./src/assets/logo.png",
+      },
       social: {
         github: "https://github.com/light-stand/scriptura-api",
       },
       sidebar: [
         {
-          label: "Guides",
-          autogenerate: { directory: "guides" },
+          label: "Start Here",
+          items: [
+            { label: "Introduction", link: "/start-here/introduction/" },
+            { label: "Getting Started", link: "/start-here/getting-started/" },
+          ],
         },
         {
           label: "Reference",
